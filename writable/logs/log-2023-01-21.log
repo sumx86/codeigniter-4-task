@@ -1,0 +1,249 @@
+ERROR - 2023-01-21 07:40:38 --> mysqli_sql_exception: Table 'sklad.users' doesn't exist in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('Select username...', 0)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select username...')
+#2 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select username...')
+#3 E:\wamp64\www\firstci4\app\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username...')
+#4 E:\wamp64\www\firstci4\app\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-21 07:40:38 --> Table 'sklad.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username from users')
+ 2 APPPATH\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-21 08:38:50 --> CodeIgniter\Cookie\Exceptions\CookieException: Cookie object with name "lang" and prefix "" was not found in the collection. in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php:114
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php(114): CodeIgniter\Cookie\Exceptions\CookieException::forUnknownCookieInstance(Array)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(648): CodeIgniter\Cookie\CookieStore->get('lang', '')
+#2 E:\wamp64\www\firstci4\app\Controllers\AddOrderController.php(40): CodeIgniter\HTTP\Response->getCookie('lang')
+#3 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AddOrderController->index()
+#4 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddOrderController))
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-01-21 08:38:53 --> CodeIgniter\Cookie\Exceptions\CookieException: Cookie object with name "lang" and prefix "" was not found in the collection. in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php:114
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php(114): CodeIgniter\Cookie\Exceptions\CookieException::forUnknownCookieInstance(Array)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(648): CodeIgniter\Cookie\CookieStore->get('lang', '')
+#2 E:\wamp64\www\firstci4\app\Controllers\AddOrderController.php(40): CodeIgniter\HTTP\Response->getCookie('lang')
+#3 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AddOrderController->index()
+#4 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddOrderController))
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-21 08:39:01 --> Array to string conversion
+in APPPATH\Controllers\AddOrderController.php on line 40.
+ 1 APPPATH\Controllers\AddOrderController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\AddOrderController.php', 40, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AddOrderController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddOrderController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-21 08:39:55 --> CodeIgniter\Cookie\Exceptions\CookieException: Cookie object with name "lang" and prefix "" was not found in the collection. in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php:114
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php(114): CodeIgniter\Cookie\Exceptions\CookieException::forUnknownCookieInstance(Array)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(648): CodeIgniter\Cookie\CookieStore->get('lang', '')
+#2 E:\wamp64\www\firstci4\app\Controllers\AddOrderController.php(40): CodeIgniter\HTTP\Response->getCookie('lang')
+#3 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AddOrderController->index()
+#4 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddOrderController))
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-01-21 08:39:55 --> CodeIgniter\Cookie\Exceptions\CookieException: Cookie object with name "lang" and prefix "" was not found in the collection. in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php:114
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php(114): CodeIgniter\Cookie\Exceptions\CookieException::forUnknownCookieInstance(Array)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(648): CodeIgniter\Cookie\CookieStore->get('lang', '')
+#2 E:\wamp64\www\firstci4\app\Controllers\AddOrderController.php(40): CodeIgniter\HTTP\Response->getCookie('lang')
+#3 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AddOrderController->index()
+#4 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddOrderController))
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-01-21 08:40:11 --> CodeIgniter\Cookie\Exceptions\CookieException: Cookie object with name "lang" and prefix "" was not found in the collection. in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php:114
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php(114): CodeIgniter\Cookie\Exceptions\CookieException::forUnknownCookieInstance(Array)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(648): CodeIgniter\Cookie\CookieStore->get('lang', '')
+#2 E:\wamp64\www\firstci4\app\Controllers\AddOrderController.php(40): CodeIgniter\HTTP\Response->getCookie('lang')
+#3 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AddOrderController->index()
+#4 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddOrderController))
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-01-21 08:40:11 --> CodeIgniter\Cookie\Exceptions\CookieException: Cookie object with name "lang" and prefix "" was not found in the collection. in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php:114
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php(114): CodeIgniter\Cookie\Exceptions\CookieException::forUnknownCookieInstance(Array)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(648): CodeIgniter\Cookie\CookieStore->get('lang', '')
+#2 E:\wamp64\www\firstci4\app\Controllers\AddOrderController.php(40): CodeIgniter\HTTP\Response->getCookie('lang')
+#3 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AddOrderController->index()
+#4 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddOrderController))
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-01-21 08:40:17 --> CodeIgniter\Cookie\Exceptions\CookieException: Cookie object with name "lang" and prefix "" was not found in the collection. in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php:114
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php(114): CodeIgniter\Cookie\Exceptions\CookieException::forUnknownCookieInstance(Array)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(648): CodeIgniter\Cookie\CookieStore->get('lang', '')
+#2 E:\wamp64\www\firstci4\app\Controllers\AddOrderController.php(40): CodeIgniter\HTTP\Response->getCookie('lang')
+#3 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AddOrderController->index()
+#4 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddOrderController))
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-01-21 08:40:17 --> CodeIgniter\Cookie\Exceptions\CookieException: Cookie object with name "lang" and prefix "" was not found in the collection. in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php:114
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php(114): CodeIgniter\Cookie\Exceptions\CookieException::forUnknownCookieInstance(Array)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(648): CodeIgniter\Cookie\CookieStore->get('lang', '')
+#2 E:\wamp64\www\firstci4\app\Controllers\AddOrderController.php(40): CodeIgniter\HTTP\Response->getCookie('lang')
+#3 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AddOrderController->index()
+#4 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddOrderController))
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-01-21 08:40:18 --> CodeIgniter\Cookie\Exceptions\CookieException: Cookie object with name "lang" and prefix "" was not found in the collection. in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php:114
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php(114): CodeIgniter\Cookie\Exceptions\CookieException::forUnknownCookieInstance(Array)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(648): CodeIgniter\Cookie\CookieStore->get('lang', '')
+#2 E:\wamp64\www\firstci4\app\Controllers\AddOrderController.php(40): CodeIgniter\HTTP\Response->getCookie('lang')
+#3 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AddOrderController->index()
+#4 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddOrderController))
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-01-21 08:40:18 --> CodeIgniter\Cookie\Exceptions\CookieException: Cookie object with name "lang" and prefix "" was not found in the collection. in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php:114
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Cookie\CookieStore.php(114): CodeIgniter\Cookie\Exceptions\CookieException::forUnknownCookieInstance(Array)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(648): CodeIgniter\Cookie\CookieStore->get('lang', '')
+#2 E:\wamp64\www\firstci4\app\Controllers\AddOrderController.php(40): CodeIgniter\HTTP\Response->getCookie('lang')
+#3 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AddOrderController->index()
+#4 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AddOrderController))
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-01-21 09:15:50 --> mysqli_sql_exception: Table 'sklad.users' doesn't exist in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('Select username...', 0)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select username...')
+#2 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select username...')
+#3 E:\wamp64\www\firstci4\app\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username...')
+#4 E:\wamp64\www\firstci4\app\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-21 09:15:50 --> Table 'sklad.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username from users')
+ 2 APPPATH\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-21 10:20:35 --> mysqli_sql_exception: Table 'sklad.users' doesn't exist in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('Select username...', 0)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select username...')
+#2 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select username...')
+#3 E:\wamp64\www\firstci4\app\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username...')
+#4 E:\wamp64\www\firstci4\app\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-21 10:20:35 --> Table 'sklad.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username from users')
+ 2 APPPATH\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-21 11:36:21 --> mysqli_sql_exception: Table 'sklad.users' doesn't exist in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('Select username...', 0)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select username...')
+#2 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select username...')
+#3 E:\wamp64\www\firstci4\app\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username...')
+#4 E:\wamp64\www\firstci4\app\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-21 11:36:21 --> Table 'sklad.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username from users')
+ 2 APPPATH\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-21 13:26:49 --> mysqli_sql_exception: Table 'sklad.users' doesn't exist in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('Select username...', 0)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select username...')
+#2 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select username...')
+#3 E:\wamp64\www\firstci4\app\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username...')
+#4 E:\wamp64\www\firstci4\app\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-21 13:26:49 --> Table 'sklad.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username from users')
+ 2 APPPATH\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-21 16:20:12 --> Undefined variable: db
+in APPPATH\Views\add_products_page.php on line 23.
+ 1 APPPATH\Views\add_products_page.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Views\\add_products_page.php', 23, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\add_products_page.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('add_products_page', [], true)
+ 5 APPPATH\Controllers\Products.php(19): view('add_products_page')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Products->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-21 16:20:13 --> Undefined variable: db
+in APPPATH\Views\add_products_page.php on line 23.
+ 1 APPPATH\Views\add_products_page.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Views\\add_products_page.php', 23, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\add_products_page.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('add_products_page', [], true)
+ 5 APPPATH\Controllers\Products.php(19): view('add_products_page')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Products->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-21 17:55:30 --> mysqli_sql_exception: Table 'sklad.users' doesn't exist in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('Select username...', 0)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select username...')
+#2 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select username...')
+#3 E:\wamp64\www\firstci4\app\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username...')
+#4 E:\wamp64\www\firstci4\app\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-21 17:55:30 --> Table 'sklad.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username from users')
+ 2 APPPATH\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

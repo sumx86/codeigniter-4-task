@@ -1,0 +1,153 @@
+ERROR - 2023-01-20 08:11:58 --> mysqli_sql_exception: Table 'sklad.users' doesn't exist in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('Select username...', 0)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select username...')
+#2 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select username...')
+#3 E:\wamp64\www\firstci4\app\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username...')
+#4 E:\wamp64\www\firstci4\app\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-20 08:11:58 --> Table 'sklad.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username from users')
+ 2 APPPATH\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 08:46:09 --> Invalid file: "add_products_page.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('add_products_page.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('add_products_page', [], true)
+ 3 APPPATH\Controllers\Products.php(19): view('add_products_page')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Products->add()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-20 09:40:57 --> mysqli_sql_exception: Table 'sklad.users' doesn't exist in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('Select username...', 0)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select username...')
+#2 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select username...')
+#3 E:\wamp64\www\firstci4\app\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username...')
+#4 E:\wamp64\www\firstci4\app\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-20 09:40:57 --> Table 'sklad.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username from users')
+ 2 APPPATH\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 09:44:41 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\order_products_page.php on line 35.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('order_products_page', [], true)
+ 4 APPPATH\Controllers\Products.php(15): view('order_products_page', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Products->order()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 09:44:45 --> Cannot use object of type stdClass as array
+in APPPATH\Views\order_products_page.php on line 35.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('order_products_page', [], true)
+ 4 APPPATH\Controllers\Products.php(15): view('order_products_page', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Products->order()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 09:44:49 --> Illegal string offset 'id'
+in APPPATH\Views\order_products_page.php on line 35.
+ 1 APPPATH\Views\order_products_page.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id\'', 'APPPATH\\Views\\order_products_page.php', 35, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order_products_page.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('order_products_page', [], true)
+ 5 APPPATH\Controllers\Products.php(15): view('order_products_page', [])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Products->order()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 09:46:00 --> Cannot use object of type stdClass as array
+in APPPATH\Views\order_products_page.php on line 36.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('order_products_page', [], true)
+ 4 APPPATH\Controllers\Products.php(15): view('order_products_page', [])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Products->order()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-20 10:20:49 --> mysqli_sql_exception: Table 'sklad.users' doesn't exist in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('Select username...', 0)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select username...')
+#2 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select username...')
+#3 E:\wamp64\www\firstci4\app\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username...')
+#4 E:\wamp64\www\firstci4\app\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-20 10:20:49 --> Table 'sklad.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username from users')
+ 2 APPPATH\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 12:45:35 --> Class 'App\Libraries\Str' not found
+in APPPATH\Views\order_products_page.php on line 6.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('order_products_page', [], true)
+ 4 APPPATH\Controllers\Products.php(14): view('order_products_page')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Products->order()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 12:45:37 --> Class 'App\Libraries\Str' not found
+in APPPATH\Views\order_products_page.php on line 6.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('order_products_page', [], true)
+ 4 APPPATH\Controllers\Products.php(14): view('order_products_page')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Products->order()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-20 12:45:39 --> mysqli_sql_exception: Table 'sklad.users' doesn't exist in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('Select username...', 0)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select username...')
+#2 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select username...')
+#3 E:\wamp64\www\firstci4\app\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username...')
+#4 E:\wamp64\www\firstci4\app\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-20 12:45:39 --> Table 'sklad.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username from users')
+ 2 APPPATH\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 12:45:45 --> Cannot use App\Libraries\String as String because 'String' is a special class name
+in APPPATH\Views\order_products_page.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
