@@ -73,3 +73,29 @@ in SYSTEMPATH\Database\BaseConnection.php on line 645.
  4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-23 14:00:59 --> mysqli_sql_exception: Table 'sklad.users' doesn't exist in E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('Select username...', 0)
+#1 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('Select username...')
+#2 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('Select username...')
+#3 E:\wamp64\www\firstci4\app\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username...')
+#4 E:\wamp64\www\firstci4\app\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+#5 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#6 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 E:\wamp64\www\firstci4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\wamp64\www\firstci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 14:00:59 --> Table 'sklad.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Libraries\TestLibrary.php(14): CodeIgniter\Database\BaseConnection->query('Select username from users')
+ 2 APPPATH\Controllers\Home.php(47): App\Libraries\TestLibrary->getData()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-23 14:04:42 --> Object of class CodeIgniter\HTTP\Response could not be converted to string
+in APPPATH\Controllers\MakeOrderController.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\MakeOrderController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MakeOrderController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
