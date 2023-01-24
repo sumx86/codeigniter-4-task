@@ -57,7 +57,7 @@ class AddProductController extends BaseController
             $this->assertionError = json_encode(['error' => 'Please enter a valid price!']);
             return false;
         }
-        if($data['broika'] <= 0) {
+        if(intval($data['broika']) <= 0) {
             $this->assertionError = json_encode(['error' => 'Please enter a valid count!']);
             return false;
         }
@@ -86,8 +86,11 @@ class AddProductController extends BaseController
     {
         $item = $data['ime'];
         if(!$this->has_item($item, $table)) {
-            $this->add_item($data, $table);
-            echo json_encode(['success' => '['.Str::upper($item).'] added successfully!']);
+            if($this->add_item($data, $table) == 1) {
+                echo json_encode(['success' => '['.Str::upper($item).'] added successfully!']);
+            } else {
+                echo json_encode(['error' => 'There was an error adding item ['.Str::upper($item).']!']);
+            }
         } else {
             $this->update_item($data, $table);
             echo json_encode(['success' => 'Data for ['.Str::upper($item).'] updated successfully!']);
@@ -101,6 +104,7 @@ class AddProductController extends BaseController
     {
         $builder = $this->db->table($table);
         $builder->insert($data);
+        return $this->db->affectedRows();
     }
 
     /*

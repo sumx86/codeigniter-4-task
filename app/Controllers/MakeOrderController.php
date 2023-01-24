@@ -25,14 +25,14 @@ class MakeOrderController extends BaseController
                 $orders = $value;
 
                 if($this->process_order($table, $orders)) {
-                    
+                    echo json_encode(['success' => 'Orders for ['. Str::upper($table) .'] processed successfully!']);
                 }
             }
         }
     }
 
     /*
-     * Проверяване и вкарване на поръчката в pending_orders
+     * Проверяване и вкарване на всяка една поръчка от склада $table в pending_orders
      */
     public function process_order($table, $ordersArray)
     {
@@ -49,7 +49,7 @@ class MakeOrderController extends BaseController
     }
 
     /*
-     * Update на бройката на артикула в склада $table
+     * Update на бройката на артикула $data->ime в склада $table
      */
     public function update_item_count($data, $table)
     {

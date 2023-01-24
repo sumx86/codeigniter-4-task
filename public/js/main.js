@@ -53,7 +53,6 @@ var poruchka = {
             $('#final-price > span > span').text(poruchka['total_price'] + 'lv');
         }
 
-
         function calcPrice(order) {
             var price = 0.00;
             $(Object.keys(order)).each(function(index, element) {

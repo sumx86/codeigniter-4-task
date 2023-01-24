@@ -45,10 +45,6 @@ class AddOrderController extends BaseController
                 ]]);
                 return;
             }
-
-            // $newCount = intval($itemData[0]->broika) - $count;
-            // $this->update_item_count($item, $table, $newCount);
-
             echo json_encode(['order' => [
                 'sklad'  => $table,
                 'ime'    => $item,
