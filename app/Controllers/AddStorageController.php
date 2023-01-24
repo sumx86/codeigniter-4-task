@@ -16,7 +16,10 @@ class AddStorageController extends BaseController
         $this->forge = \Config\Database::forge();
         $this->db    = \Config\Database::connect();
     }
-
+    
+    /*
+     * Създаване на нов склад
+     */
     public function index()
     {
         $table = $this->request->getVar('nov-sklad');
